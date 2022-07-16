@@ -3,7 +3,7 @@ import { Image, StyleSheet } from 'react-native';
 
 export default function SeeMoreeIcon() {
   return (
-    <Image source={require('../../../assets/Icon.png')} style={styles.image} />
+    <Image source={require('../../../assets/item.png')} style={styles.image} />
   );
 }
 

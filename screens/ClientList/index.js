@@ -12,7 +12,7 @@ import ClientItem from './components/ClientItem';
 import LstBut from './components/LstBut';
 import clientsData from '../../data/data';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+
 
 export default function ClientList() {
   const [clients, setClients] = useState(clientsData);
@@ -98,7 +98,7 @@ export default function ClientList() {
       <View style={styles.title}>
         <Text style={styles.text}>Клиенты</Text>
       </View>
-      <KeyboardAwareScrollView>
+      
       <View style={styles.txtIn}>
         <Image
           style={styles.icon}
@@ -113,13 +113,12 @@ export default function ClientList() {
       </View>
       
       <FlatList data={filteredClients} renderItem={renderItem} />
-      </KeyboardAwareScrollView>
+      
       <LstBut
         text="Добавить нового"
         addClient={addClient}
         id={clients?.length}
       />
-    
     </SafeAreaView>
   );
 }
@@ -132,6 +131,7 @@ const styles = StyleSheet.create({
     top: 15.6,
   },
   container: {
+    paddingTop: 20,
     flex: 1,
     backgroundColor: '#FDFDFD',
   },

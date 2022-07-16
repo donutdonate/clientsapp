@@ -24,10 +24,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     height: 52,
     justifyContent: 'center',
-    alignItems: 'center',
-  marginRight: 24,
-  marginLeft: 24,
-  marginTop: 120
   },
   text: {
     // fontWeight: '600',
@@ -39,11 +35,9 @@ const styles = StyleSheet.create({
     paddingLeft: 24,
   },
   but: {
-    justifyContent: 'flex-end',
     flex: 1,
-    // marginBottom: 44,
-    // marginLeft: 24,
-    // paddingRight: 24,
-    // paddingTop: 81,
+     paddingRight: 24,
+     paddingLeft: 24,
+     marginTop: 52
   },
 });
